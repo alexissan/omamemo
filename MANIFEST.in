@@ -1,0 +1,3 @@
+include LICENSE README.md install.sh uninstall.sh
+recursive-include assets *.desktop *.svg
+recursive-include tests *.py

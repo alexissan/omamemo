@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Omamemo
+Comment=Record, organize and transcribe local voice memos
+Exec=omamemo
+Icon=omamemo
+Terminal=false
+Categories=AudioVideo;Audio;Recorder;
+Keywords=voice;memo;record;transcribe;
+StartupNotify=true
+StartupWMClass=omamemo
+# Omamemo managed launcher

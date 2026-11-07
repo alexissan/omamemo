@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omamemo"
+version = "0.1.1"
+description = "Local voice memos for Omarchy and Linux"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = ["PySide6>=6.6"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: X11 Applications :: Qt",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+omamemo = "omamemo.app:main"
+
+[tool.setuptools.packages.find]
+include = ["omamemo*"]
+
+[tool.setuptools.data-files]
+"share/applications" = ["assets/omamemo.desktop"]
+"share/icons/hicolor/scalable/apps" = ["assets/omamemo.svg"]
